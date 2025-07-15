@@ -1,0 +1,161 @@
+*{
+ margin:0%;
+ padding:0%;
+ box-sizing:border-box;
+}
+
+html{
+    height:100%;
+    width:100%;
+}
+body{
+    background-color: rgb(44, 2, 44);
+    padding: 7rem 0;
+}
+
+#main-div{
+    margin: auto;
+    border: 2px solid gray;
+    width: 1000px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem 1rem;
+    background-color:  rgb(34, 8, 34);
+    border-radius: 1.125rem;
+    gap: 2rem;
+}
+#main-head{
+    margin-top: 2rem;
+    color: white;
+    font-size: 70px;
+}
+#m-h2{
+    font-size: 50px;
+    color: white;
+}
+em{
+    color: rgb(215, 215, 183);
+}
+.inputs{
+    /* border: 2px solid green; */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem 0.5rem;
+    width: 92%;
+    height: auto ;
+    gap: 1rem;
+}
+#task-input{
+    height: 45px;
+    width: 80%;
+    font-size: 20px;
+    padding: 1rem 0.6rem;
+    font-weight:500;
+    border-radius: 0.4rem;
+}
+#add{
+    height: 40px;
+    width: 100px;
+    border: none;
+    background-color:rgb(204, 187, 165);
+    border-radius: 0.5rem;
+    font-size: 20px;
+    font-weight: bold;
+}
+#add:hover{
+    background-color:rgb(173, 150, 119);
+}
+
+#second-head{
+    font-size: 30px;
+    color: rgb(219, 219, 83);
+}
+#tasks{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    /* border: 2px solid gold; */
+    width: 86%;
+    padding: 0.5rem 0.5rem;
+    height: auto;
+}
+.my-tasks{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    border:1px solid green;
+    padding: 0.8rem 1.2rem;
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+}
+.tasks-span{
+    text-transform: uppercase;
+    color: white;
+    font-size: 22px;
+    font-weight: 500;
+}
+.tasks-btn{
+    width: 80px;
+    height: 37px;
+    font-size: 18px;
+    color: white;
+    font-weight: 500;
+    background-color:rgb(5, 76, 124);
+    border: none;
+    border-radius: 0.3rem;
+    letter-spacing:1.2px ;
+}
+
+.btn-div{
+    display: flex;
+    flex-direction: row;
+    padding:0.4rem 0.4rem;
+    gap: 0.6rem;
+    background-color: transparent;
+    border: none;
+}
+
+.converted-input{
+    height: 40px;
+    width: 60%;
+    font-size: 20px;
+    padding: 1rem 0.6rem;
+    font-weight:500;
+    border-radius: 0.4rem;
+}
+
+@media screen and (max-width:1000px){
+    #main-div{
+        width: auto;
+    }
+    .inputs{
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width:513px){
+    #m-h2{
+        text-align: center;
+    }
+}
+@media screen and (max-width:401px){
+    #main-head{
+        font-size: 65px;
+        text-align: center;
+    }
+}
+
+
+
+
